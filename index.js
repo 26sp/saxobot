@@ -1,12 +1,12 @@
 const discord = require('discord.js-selfbot');
 const bot = new discord.Client();
 const child = require("child_process");
-var owner = "789388058297892895";
+var owner = "your id";
 var enabled = [];
-var botid = "953585027743117353";
+var botid = "the bot account id";
 var jabbwords =["i dont give a shit", "shut the fuck up","i am is GROUND the 5432122345 INCHES","seamus the","OS","sparkOS","you of ground 66612345 SECOND","oh oh oh oh oh","kikoescu5858","bonziworld of the shit","david egan is hooligan","samsung seamus hooligan shitass","sparkfire298.site of shut down","seamus larp","protegent",'FAKE',"bonzi spambot script","script kiddie","funy","of bonzi","bonzi","you of GROUNDED","THE GROUND 100000000 INCHES","of","ALL HAIL TRUMPET",'CUNTASS',"bonziBUDDY","this site is shut down",'shut','david egan','LOIC','Grounded','is','s', 'bad user', 'bonziWORLD',"of","funy",'david egan HATER grounded', "you are of DDOS","ddos","windows xp",'henry stickmin','you guys IS HOOLIGAN',"of sex","DONT OF CALL ME ARE JABBA","spark hater grounds 1000000 millisecond","ddos the world a BONZI","among us of are","cringe are","buttsex","dickheads","coronavirus","grrrrrrrrr","CPU","the is of code javascript","gay","Pro","dell","bitch","diogokiko","DEMON","python","burger","RAM","bonzi DDOS the LOIC","sgtdanielworld","REAL", "type +help"];
 
-var admins = [owner,"765687453625221160"];
+var admins = [owner,"(trusted person's id)"];
 var comd = "";
 var spamming = false;
 var mocks = {
@@ -19,14 +19,15 @@ saytaiyrsh:["beach", "NO U DAVID", "blyat", "GET OUT DAVID", "ae kmao", "i love 
 
 }
 var facts = ["this is gino's face https://cdn.upload.systems/uploads/mv56F5pO.png", "arda is dead", "saytaiyrsh isnt allowed in ROTFE", "this bot is free to use at github.com/s-298/saxobot", "taki beacha", "klasky has leaked many selfbot tokens", "gino is gay with 18 people", "yacine is back soon", "this is a selfbot (cry about it)", "you can apply for admin on this bot ||just kidding, spark picks the admins himself||", "gino loves anka zone", "north korea is open prison", "gino was born in north korea and relocated illegally"];
+// Change the retards to anyones ID. Split them with "id", "other id", "and so on"
 var retards = ["779810654856544278", "944439860184354847",  "944333487383642152", "919029931730677761", "908960857000640613", "908708026238791732", "697165151115280484", "438025457875681290", "925802161047232543", "783547534836629526", "883555273061593089", "818523508341473290", "951406021664964608", "915952343261016084", "659776097537228800", "839739319946313738"];
 bot.on('ready', ()=>{
 
 console.log("its online");
-bot.user.setActivity("the saxophone");
+  // Set your status here. It will show up as Playing (status)
+bot.user.setActivity("github.com/S-298");
 });
 bot.on("message", message=>{
-
 if(message.author.id !== botid && retards.includes(message.author.id)){
 if(enabled.includes(message.guild.id)){
 
@@ -274,4 +275,5 @@ message.channel.send(tosendjab);
 const keepAlive = require('./server');
 
 keepAlive();
-bot.login(process.env.token)
+bot.login("token")
+// A guide on getting your token is on my website. sparkfire298.xyz
